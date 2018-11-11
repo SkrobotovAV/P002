@@ -1,27 +1,30 @@
-project(':common'){
+
+subprojects{
     apply plugin :'java'
+}
+project(':common'){
 }
 project(':server-core'){
-    apply plugin :'java'
 }
 project(':server-ui'){
-    apply plugin :'java'
 }
 project(':tracker-core'){
-    apply plugin :'java'
 }
 project(':tracker-ui'){
-    apply plugin :'java'
 }
 
-version '1.0-SNAPSHOT'
+//plugins {
+//    id 'java'
+//}
 
-sourceCompatibility = 1.8
+//version '1.0-SNAPSHOT'
+
+//sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-}
+//dependencies {
+//    testCompile group: 'junit', name: 'junit', version: '4.12'
+//}
